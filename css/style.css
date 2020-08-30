@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(0,0,0,0.1);
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* Container */
+.container{
+    padding: 10px;
+    width: 400px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header{
+    width: 400px;
+    height: 200px;
+    background-image: url(../assets/bg1.jpg);
+    background-size: 100% 200%;
+    background-repeat: no-repeat;
+    border-radius: 15px 15px 0 0;
+    position: relative;
+}
+
+.header .clear{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.header .clear i{
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.header .clear i:hover{
+    cursor: pointer;
+    text-shadow: 1px 3px 5px #000000;
+    transform: rotate(45deg);
+}
+
+.header #date{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #ffffff;
+    font-size: 30px;
+    text-shadow: 1px 2px 5px #000000;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* Content */
+.content{
+    width: 400px;
+    height: 350px;
+    max-height: 350px;
+    background-color: #ffffff;
+    overflow: auto;
+}
+
+.content .item{
+    width: 400px;
+    height: 45px;
+    min-height: 45px;
+    position: relative;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    list-style: none;
+}
+
+.item i.complete{
+    position: absolute;
+    font-size: 25px;
+    left:15px;
+    top:10px;
+}
+
+.item i.complete:hover{
+    cursor: pointer;
+}
+
+.fa-check-circle{
+    color:#6eb200;
+}
+
+.item p.text{
+    position: absolute;
+    font-size: 20px;
+    left: 60px;
+    top: 5px;
+    background-color: #ffffff;
+    max-width: 285px;
+}
+
+.lineThrough{
+    text-decoration: line-through;
+    color : #ccc;
+}
+
+.item i.delete{
+    position: absolute;
+    font-size: 25px;
+    right:15px;
+    top:10px;
+}
+
+.item i.delete:hover{
+    color:#af0000;
+    cursor: pointer;
+}
+
+/* Add To-Do */
+.add-item{
+    position: relative;
+    top: auto;
+    width: 360px;
+    height: 40px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.add-item i{
+    position: absolute;
+    font-size: 40px;
+    color: #4162f6;
+    cursor: pointer;
+}
+
+.add-item input{
+    position: absolute;
+    left: 50px;
+    height: 35px;
+    width: 325px;
+    background-color: transparent;
+    border: 1px solid #4162f6;
+    border-radius: 5px;
+    outline: none;
+    font-size: 20px;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+
+.add-item input::placeholder{
+    color: #4162f6;
+    font-size: 20px;
+    font-family: 'Titillium Web', sans-serif;
+}
